@@ -17,6 +17,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- Added support for SmartStore (S2)
+- Install Policy Kit Rules by enable boot-start for 8.1.1+
+- Added setting summary_replication = true
+- Added Bucket tunings for indexers
 - Do not update comment macro permissions for Splunk 8.1+
 - Added playbook to update splunk web certs
 - Support upgrades to Splunk 8.x
@@ -26,6 +30,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
+- Fixed ansible temp_dir warning during splunk download
 - Fixed SHC setup for Splunk 8.1.x
 - Fixed changed status to be ok for non changing shell and command tasks
 - Fixed splunk command calls to run as user splunk instead of root
